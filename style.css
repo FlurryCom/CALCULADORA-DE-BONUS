@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'k2d-bold';
+  src: url(FONTES/K2D-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'k2d-regular';
+  src: url(FONTES/K2D-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'k2d-semibold';
+  src: url(FONTES/K2D-SemiBold.ttf) format('truetype');
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #212121; /* Fundo neutro */
+}
+
+.register-box {
+  width: 50%; /* Ajuste proporcional */
+  height: 80%;
+  max-width: 375.5px; /* Largura máxima (reduzida pela metade) */
+  padding: 30px;
+  border-radius: 39px;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  display: block;
+  text-align: center;
+}
+
+.icon-enter {
+  width: 50px;
+  height: 50px;
+  color: #ff5733; /* Altere a cor conforme necessário */
+}
+
+.register-box h1 {
+  font-size: 1.8rem;
+  font-family: 'k2d-bold', sans-serif;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.register-box p {
+  font-size: 0.9rem;
+  font-family: 'k2d-semibold', sans-serif;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.input-email,
+.input-password,
+.input-select {
+  width: 90%; /* Largura consistente */
+  height: 44px;
+  padding: 10px;
+  margin: 5px auto; /* Margem superior e centralizado horizontalmente */
+  border-radius: 15px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #eff2f6;
+  border: 1px solid #b9babd;
+  font-family: 'k2d-semibold', sans-serif;
+  color: #7e7e7e;
+}
+
+.input-select {
+  padding: 10px;
+  background-color: #eff2f6;
+  font-size: 16px;
+  color: #818998;
+}
+
+.button-entrar {
+  border: none;
+  width: 90%;
+  height: 50px;
+  background: #0e0f1a;
+  color: #fff;
+  font-family: 'k2d-semibold', sans-serif;
+  border-radius: 21px;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 18px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+
+.button-entrar:hover {
+  transform: scale(1.1);
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .register-box {
+    padding: 20px;
+    max-width: 400px;
+  }
+
+  .register-box h1 {
+    font-size: 1.8rem;
+  }
+
+  .input-email,
+  .input-password,
+  .input-select {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .button-entrar {
+    width: 100%;
+    font-size: 16px;
+  }
+}

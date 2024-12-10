@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Bônus</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="register-box">
+      <img
+        class="icon-enter"
+        src="calculator-solid.svg"
+        alt="Ícone da calculadora"
+      />
+      <h1>Calculadora de Bônus</h1>
+      <p>Informe os dados abaixo para calcular o bônus atualizado.</p>
+      <form action="#" method="POST">
+        <input
+          id="cancelamento"
+          class="input-password"
+          type="date"
+          placeholder="Data de Cancelamento"
+          required
+        />
+        <input
+          id="bonus-atual"
+          class="input-password"
+          type="number"
+          placeholder="Bônus Atual da Apólice (0-10)"
+          min="0"
+          max="10"
+          required
+        />
+        <select id="sinistro" class="input-password" required>
+          <option value="" disabled selected>Teve sinistro na apólice?</option>
+          <option value="sim">Sim</option>
+          <option value="nao">Não</option>
+        </select>
+
+        <input
+          id="quantidade-sinistros"
+          class="input-password"
+          type="number"
+          placeholder="Quantos sinistros teve?"
+          min="1"
+          style="display: none"
+        />
+
+        <button type="submit" class="button-entrar">Calcular</button>
+      </form>
+    </div>
+  </body>
+</html>
